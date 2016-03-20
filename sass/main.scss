@@ -1,0 +1,418 @@
+@import 'reset';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+
+$white: #fff;
+$yellow: #cfc91d;
+$green: #02918c;
+$black: #0b1016;
+$dblack: #000000;
+$lblack: #0b0b0b;
+$grey: #7e8287;
+$lgrey: #d9dbdb;
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+	background: $green;
+
+	.logo {
+		float: left;
+
+		img {
+			margin: 20px 0px;
+		}
+	}
+
+
+	ul.menu {
+		float: right;
+
+		li {
+			float: left;
+			margin: 20px 0px;
+
+			a {
+				color: $white;
+				text-decoration: none;
+				margin-left: 45px;
+				text-transform: uppercase;
+				font-size: 0.75em;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.banner {
+	width: 100%;
+	height: 728px;
+	background: url(../img/banner.jpg) no-repeat 0 0 / cover;
+	text-align: center;
+
+	.banner-area {
+
+		padding: 210px;
+
+		h1 {
+			color: $white;
+			font-size: 1.875em;
+			
+		}
+
+		h1.big {
+				font-size: 4.25em;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: 15px;
+				margin: 20px 0px;
+			}
+
+		h1.small {
+				font-size: 1.125em;
+			}
+
+		img {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		button {
+			border: none;
+			background: $yellow;
+			padding: 20px 40px;
+			color: $black;
+			font-size: 0.875em;
+			font-weight: 800;
+			text-transform: uppercase;
+			border: 2px solid $yellow;
+			transition: all .2s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $black;
+				background-color: transparent;
+				color: $yellow;
+				border: 2px solid $yellow;
+			}
+		}
+	}
+}
+
+.about {
+	text-align: center;
+	clear: both;
+	overflow: hidden;
+	h1 {
+		color: $green;
+		font-size: 2.875em;
+		font-weight: 800;
+		text-transform: uppercase;
+		padding-top: 100px;
+		margin-bottom: 20px;
+	}
+	span {
+
+		&.divider {
+			color: $grey;
+		}
+		
+		&.divider::before {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+
+		&.divider::after {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+	}
+	p {
+		font-size: 1em;
+		color: $grey;
+		margin-top: 20px;
+		span.bold {
+			font-size: 1.4375em;
+			font-weight: 800;
+			line-height: 2.5625em;
+		}
+	}
+	
+	.skills {
+		width: 100%;
+		overflow: hidden;
+			.skills-one {
+				float: left;
+				border-right: 1px solid $lgrey;
+				width: 290px;
+				margin-left: 2%;
+				margin-top: 5%;
+				margin-bottom: 10%;
+				height: 200px;
+				padding-top: 50px;
+			&:last-child {
+				border-right: none;
+			}
+
+			img {
+				margin-bottom: 20px;
+			}
+
+			h4 {
+				font-size: 1em;
+				font-weight: 700;
+				color: $grey;
+				width: 100%;
+			}
+
+			p {
+				font-size: 0.6875em;
+				width: 100%;
+				line-height: 1.875em;
+			}
+		}
+	}
+}
+
+.services {
+	background: url(../img/banner2.jpg) no-repeat 0 0 / cover;
+	height: 728px;
+	padding-left: 100px;
+	clear: both;
+	overflow: hidden;
+
+	h1 {
+		color: $green;
+		font-size: 2.875em;
+		font-weight: 800;
+		text-transform: uppercase;
+		padding-top: 80px;
+		margin-bottom: 20px;
+	}
+	span {
+
+		&.divider {
+			color: $grey;
+		}
+		
+		&.divider::before {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+
+		&.divider::after {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+	}
+
+	p {
+		font-size: 1em;
+		color: $grey;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		line-height: 2.5625em;
+	}
+
+	.services-items {
+		width: 100%;
+		overflow: hidden;
+		.skills-two {
+				float: left;
+				padding-top: 20px;
+				width: 165px;
+				margin-right: 5%;
+
+			img {
+				margin-bottom: 20px;
+			}
+
+			h4 {
+				font-size: 1em;
+				font-weight: 700;
+				color: $grey;
+				width: 100%;
+			}
+
+			p {
+				font-size: 0.6875em;
+				width: 100%;
+				line-height: 1.875em;
+			}
+		}
+	}
+}
+
+.mywork {
+	text-align: center;
+	h1 {
+		color: $green;
+		font-size: 2.875em;
+		font-weight: 800;
+		text-transform: uppercase;
+		padding-top: 100px;
+		margin-bottom: 20px;
+	}
+	span {
+
+		&.divider {
+			color: $grey;
+		}
+		
+		&.divider::before {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+
+		&.divider::after {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+	}
+	p {
+		font-size: 1em;
+		color: $grey;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		line-height: 2.5625em;
+	}
+
+	figure {
+		img {
+			box-sizing: border-box;
+			width: 100%;
+			margin:0 auto;
+			padding:0;
+		}
+		figcaption {
+			
+			h4 {
+				padding-top: 30px;
+				margin-bottom: 10px;
+				font-size: 1em;
+				font-weight: 700;
+				color: $white;
+			}
+			p {
+				font-size: 0.8125em;
+				color: $white;
+			}
+		}
+	}
+					
+}
+
+.contact {
+	text-align: center; 
+	h1 {
+		color: $green;
+		font-size: 2.875em;
+		font-weight: 800;
+		text-transform: uppercase;
+		padding-top: 80px;
+		margin-bottom: 20px;
+	}
+	span {
+
+		&.divider {
+			color: $grey;
+		}
+		
+		&.divider::before {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+
+		&.divider::after {
+			content: "~~~~~~~~";
+			color: $grey;
+		}
+	}
+	p {
+		font-size: 1em;
+		color: $grey;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		line-height: 2.5625em;
+	}
+}
+
+.form {
+	background: $lblack;
+	text-align: center;
+	color: $grey;
+	padding-bottom: 50px;
+
+	input {
+		text-align: center;
+		border: none;
+		background: transparent;
+		font-size: 1em;
+		text-transform: uppercase;
+		padding: 20px;
+		margin-top: 30px;
+		width: 630px;
+		border-bottom: 1px solid $grey;
+		color: $grey;
+	}
+	
+
+	h1 {
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: normal;
+		color: $grey;
+		margin-top: -35px;
+	}
+
+	textarea {
+		border: none;
+		background: transparent;
+		padding: 20px;
+		width: 920px;
+		height: 90px;
+		border-bottom: 1px solid $grey;
+		border-top: 1px solid $grey;
+		margin-bottom: 20px;
+		color: $grey;
+	}
+
+	button.submit {
+			border: none;
+			background: $yellow;
+			padding: 10px 50px;
+			color: $black;
+			margin-top: 20px;
+			font-size: 0.875em;
+			font-weight: 800;
+			text-transform: uppercase;
+			border: 2px solid $yellow;
+			transition: all .2s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $black;
+				background-color: transparent;
+				color: $yellow;
+				border: 2px solid $yellow;
+			}
+		}
+}
+
+footer {
+	background: $dblack;
+	text-align: center;
+	padding: 20px;
+	p {
+		color: $grey;
+		font-size: 0.75em;
+	}
+}

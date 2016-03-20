@@ -1,0 +1,473 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaptione, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, ../sass/main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 17, ../sass/main.scss */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* line 22, ../sass/main.scss */
+nav {
+  width: 100%;
+  height: 60px;
+  background: #02918c;
+}
+/* line 27, ../sass/main.scss */
+nav .logo {
+  float: left;
+}
+/* line 30, ../sass/main.scss */
+nav .logo img {
+  margin: 20px 0px;
+}
+/* line 36, ../sass/main.scss */
+nav ul.menu {
+  float: right;
+}
+/* line 39, ../sass/main.scss */
+nav ul.menu li {
+  float: left;
+  margin: 20px 0px;
+}
+/* line 43, ../sass/main.scss */
+nav ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 45px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+/* line 55, ../sass/main.scss */
+.banner {
+  width: 100%;
+  height: 728px;
+  background: url(../img/banner.jpg) no-repeat 0 0/cover;
+  text-align: center;
+}
+/* line 61, ../sass/main.scss */
+.banner .banner-area {
+  padding: 210px;
+}
+/* line 65, ../sass/main.scss */
+.banner .banner-area h1 {
+  color: #fff;
+  font-size: 1.875em;
+}
+/* line 71, ../sass/main.scss */
+.banner .banner-area h1.big {
+  font-size: 4.25em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin: 20px 0px;
+}
+/* line 79, ../sass/main.scss */
+.banner .banner-area h1.small {
+  font-size: 1.125em;
+}
+/* line 83, ../sass/main.scss */
+.banner .banner-area img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 88, ../sass/main.scss */
+.banner .banner-area button {
+  border: none;
+  background: #cfc91d;
+  padding: 20px 40px;
+  color: #0b1016;
+  font-size: 0.875em;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid #cfc91d;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+/* line 100, ../sass/main.scss */
+.banner .banner-area button:hover {
+  background-color: #0b1016;
+  background-color: transparent;
+  color: #cfc91d;
+  border: 2px solid #cfc91d;
+}
+
+/* line 110, ../sass/main.scss */
+.about {
+  text-align: center;
+  clear: both;
+  overflow: hidden;
+}
+/* line 114, ../sass/main.scss */
+.about h1 {
+  color: #02918c;
+  font-size: 2.875em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+/* line 124, ../sass/main.scss */
+.about span.divider {
+  color: #7e8287;
+}
+/* line 128, ../sass/main.scss */
+.about span.divider::before {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 133, ../sass/main.scss */
+.about span.divider::after {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 138, ../sass/main.scss */
+.about p {
+  font-size: 1em;
+  color: #7e8287;
+  margin-top: 20px;
+}
+/* line 142, ../sass/main.scss */
+.about p span.bold {
+  font-size: 1.4375em;
+  font-weight: 800;
+  line-height: 2.5625em;
+}
+/* line 149, ../sass/main.scss */
+.about .skills {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 152, ../sass/main.scss */
+.about .skills .skills-one {
+  float: left;
+  border-right: 1px solid #d9dbdb;
+  width: 290px;
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  height: 200px;
+  padding-top: 50px;
+}
+/* line 161, ../sass/main.scss */
+.about .skills .skills-one:last-child {
+  border-right: none;
+}
+/* line 165, ../sass/main.scss */
+.about .skills .skills-one img {
+  margin-bottom: 20px;
+}
+/* line 169, ../sass/main.scss */
+.about .skills .skills-one h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #7e8287;
+  width: 100%;
+}
+/* line 176, ../sass/main.scss */
+.about .skills .skills-one p {
+  font-size: 0.6875em;
+  width: 100%;
+  line-height: 1.875em;
+}
+
+/* line 185, ../sass/main.scss */
+.services {
+  background: url(../img/banner2.jpg) no-repeat 0 0/cover;
+  height: 728px;
+  padding-left: 100px;
+  clear: both;
+  overflow: hidden;
+}
+/* line 192, ../sass/main.scss */
+.services h1 {
+  color: #02918c;
+  font-size: 2.875em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+/* line 202, ../sass/main.scss */
+.services span.divider {
+  color: #7e8287;
+}
+/* line 206, ../sass/main.scss */
+.services span.divider::before {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 211, ../sass/main.scss */
+.services span.divider::after {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 217, ../sass/main.scss */
+.services p {
+  font-size: 1em;
+  color: #7e8287;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 2.5625em;
+}
+/* line 225, ../sass/main.scss */
+.services .services-items {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 228, ../sass/main.scss */
+.services .services-items .skills-two {
+  float: left;
+  padding-top: 20px;
+  width: 165px;
+  margin-right: 5%;
+}
+/* line 234, ../sass/main.scss */
+.services .services-items .skills-two img {
+  margin-bottom: 20px;
+}
+/* line 238, ../sass/main.scss */
+.services .services-items .skills-two h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #7e8287;
+  width: 100%;
+}
+/* line 245, ../sass/main.scss */
+.services .services-items .skills-two p {
+  font-size: 0.6875em;
+  width: 100%;
+  line-height: 1.875em;
+}
+
+/* line 254, ../sass/main.scss */
+.mywork {
+  text-align: center;
+}
+/* line 256, ../sass/main.scss */
+.mywork h1 {
+  color: #02918c;
+  font-size: 2.875em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+/* line 266, ../sass/main.scss */
+.mywork span.divider {
+  color: #7e8287;
+}
+/* line 270, ../sass/main.scss */
+.mywork span.divider::before {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 275, ../sass/main.scss */
+.mywork span.divider::after {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 280, ../sass/main.scss */
+.mywork p {
+  font-size: 1em;
+  color: #7e8287;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 2.5625em;
+}
+/* line 289, ../sass/main.scss */
+.mywork figure img {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 297, ../sass/main.scss */
+.mywork figure figcaption h4 {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+}
+/* line 304, ../sass/main.scss */
+.mywork figure figcaption p {
+  font-size: 0.8125em;
+  color: #fff;
+}
+
+/* line 313, ../sass/main.scss */
+.contact {
+  text-align: center;
+}
+/* line 315, ../sass/main.scss */
+.contact h1 {
+  color: #02918c;
+  font-size: 2.875em;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+/* line 325, ../sass/main.scss */
+.contact span.divider {
+  color: #7e8287;
+}
+/* line 329, ../sass/main.scss */
+.contact span.divider::before {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 334, ../sass/main.scss */
+.contact span.divider::after {
+  content: "~~~~~~~~";
+  color: #7e8287;
+}
+/* line 339, ../sass/main.scss */
+.contact p {
+  font-size: 1em;
+  color: #7e8287;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 2.5625em;
+}
+
+/* line 348, ../sass/main.scss */
+.form {
+  background: #0b0b0b;
+  text-align: center;
+  color: #7e8287;
+  padding-bottom: 50px;
+}
+/* line 354, ../sass/main.scss */
+.form input {
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-top: 30px;
+  width: 630px;
+  border-bottom: 1px solid #7e8287;
+  color: #7e8287;
+}
+/* line 368, ../sass/main.scss */
+.form h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #7e8287;
+  margin-top: -35px;
+}
+/* line 376, ../sass/main.scss */
+.form textarea {
+  border: none;
+  background: transparent;
+  padding: 20px;
+  width: 920px;
+  height: 90px;
+  border-bottom: 1px solid #7e8287;
+  border-top: 1px solid #7e8287;
+  margin-bottom: 20px;
+  color: #7e8287;
+}
+/* line 388, ../sass/main.scss */
+.form button.submit {
+  border: none;
+  background: #cfc91d;
+  padding: 10px 50px;
+  color: #0b1016;
+  margin-top: 20px;
+  font-size: 0.875em;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid #cfc91d;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+/* line 401, ../sass/main.scss */
+.form button.submit:hover {
+  background-color: #0b1016;
+  background-color: transparent;
+  color: #cfc91d;
+  border: 2px solid #cfc91d;
+}
+
+/* line 410, ../sass/main.scss */
+footer {
+  background: #000000;
+  text-align: center;
+  padding: 20px;
+}
+/* line 414, ../sass/main.scss */
+footer p {
+  color: #7e8287;
+  font-size: 0.75em;
+}
